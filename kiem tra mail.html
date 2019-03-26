@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function CheckMail(str) {
+        let RegEx = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+\.[A-Za-z0-9]+$/;
+        if (RegEx.test(str)) {
+            return true;
+        }
+        return false;
+    }
+
+    let mail1 = "phandong1988@gmail.com";
+    console.log(CheckMail(mail1));
+    let mail2 = 'phandong!1988@gmail.com';
+    console.log(CheckMail(mail2));
+    let mail3 = 'phandong1988@gma.ilcom';
+    console.log(CheckMail(mail3));
+</script>
+</body>
+</html>
